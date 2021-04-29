@@ -1,34 +1,13 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Spectral', // <title>
-  manifestName: 'Spectral',
+  siteTitle: 'K-TRADE | 産廃・引っ越し・家電リユース', // <title>
+  manifestName: 'K-TRADE',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
-  manifestBackgroundColor: '#663399',
-  manifestThemeColor: '#663399',
+  manifestBackgroundColor: '#ebb727',
+  manifestThemeColor: '#ebb727',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
-  // social
-  socialLinks: [
-    {
-      style: 'brands',
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
-    },
-    {
-      style: 'brands',
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-    {
-      style: 'solid',
-      icon: 'fa-envelope',
-      name: 'Email',
-      url: 'mailto:test@example.com',
-    },
-  ],
+  pathPrefix: `/ktrade-corporate-site/`, // This path is subpath of your hosting https://domain/portfolio
+  heading: 'K-TRADE',
+  subHeading: '産業廃棄物処理/引っ越し/生活家電・音響機器等の販売',
 };

@@ -959,7 +959,7 @@
 			color: _palette(accent6, fg-bold) !important;
 
 			&:hover {
-				background-color: lighten(_palette(accent6, bg), 5) !important;
+				background-color: lighten(_palette(accent6, bg), 10) !important;
 			}
 
 			&:active {
@@ -1315,7 +1315,6 @@
 					}
 				}
 			}
-
 	}
 
 	.wrapper {
@@ -1532,6 +1531,7 @@
 						&.menuToggle {
 							outline: 0;
 							position: relative;
+							color: white;
 
 							&:after {
 								background-image: url('../images/bars.png');
@@ -1727,22 +1727,30 @@
 	#cta {
 		.inner {
 			@include vendor('display', 'flex');
-			max-width: 45em;
+			display: block;
+				text-align: center;
 
-			header {
-				@include vendor('order', '1');
-				padding-right: 3em;
-				width: 70%;
-
-				p {
-					color: inherit;
+				header {
+					padding-right: 0;
+					width: 100%;
 				}
-			}
 
-			.actions {
-				@include vendor('order', '2');
-				width: 30%;
-			}
+				.actions {
+					margin-left: auto;
+					margin-right: auto;
+					max-width: 20em;
+					width: 100%;
+				}
+
+				ul{
+					text-align: center;
+					display: inline-block;
+				}
+
+				li{
+					text-align: left;
+					list-style: none;
+				}
 
 			@include breakpoint('<=medium') {
 				display: block;
@@ -1759,11 +1767,32 @@
 					max-width: 20em;
 					width: 100%;
 				}
+
+				ul{
+					text-align: center;
+					display: inline-block;
+				}
+
+				li{
+					text-align: left;
+					list-style: none;
+				}
+
 			}
 
 			@include breakpoint('<=small') {
 				.actions {
 					max-width: none;
+				}
+
+				ul{
+					text-align: center;
+					display: inline-block;
+				}
+
+				li{
+					text-align: left;
+					list-style: none;
 				}
 			}
 		}
@@ -1839,6 +1868,11 @@
 			font-size: 1.25em;
 
 			a {
+				display: inline-block;
+				text-decoration: none;
+			}
+
+			.icon {
 				color: _palette(fg-light);
 
 				&:hover {
