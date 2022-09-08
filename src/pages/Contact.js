@@ -22,8 +22,8 @@ const IndexPage = () => (
                 <div className="col-6 col-12-xsmall">
                   <input
                     type="text"
-                    name="demo-name"
-                    id="demo-name"
+                    name="name"
+                    id="name"
                     defaultValue=""
                     placeholder="お名前"
                   />
@@ -31,14 +31,14 @@ const IndexPage = () => (
                 <div className="col-6 col-12-xsmall">
                   <input
                     type="email"
-                    name="demo-email"
-                    id="demo-email"
+                    name="email"
+                    id="email"
                     defaultValue=""
                     placeholder="メールアドレス"
                   />
                 </div>
                 <div className="col-12">
-                  <select name="demo-category" id="demo-category">
+                  <select name="category" id="category">
                     <option value="">- お問い合わせ内容 -</option>
                     <option value="1">大型ゴミ回収のご相談</option>
                     <option value="1">お引っ越し手伝いのご相談</option>
@@ -50,16 +50,16 @@ const IndexPage = () => (
                 <div className="col-6 col-12">
                   <input
                     type="text"
-                    name="demo-name"
-                    id="demo-name"
+                    name="name"
+                    id="name"
                     defaultValue=""
                     placeholder="件名"
                   />
                 </div>
                 <div className="col-12">
                   <textarea
-                    name="demo-message"
-                    id="demo-message"
+                    name="message"
+                    id="message"
                     placeholder="本文"
                     rows="6"
                   ></textarea>
