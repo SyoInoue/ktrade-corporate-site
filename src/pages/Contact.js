@@ -16,7 +16,8 @@ const IndexPage = () => (
         <div className="inner">
           <section>
             <h4>●お問い合わせフォーム</h4>
-            <form method="post" netlify>
+            <form method="post" name="contact" data-netlify="true" action="thanks">
+            <input type="hidden" name="form-name" value="contact" />
               <div className="row gtr-uniform">
                 <div className="col-6 col-12-xsmall">
                   <input
